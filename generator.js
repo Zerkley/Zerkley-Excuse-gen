@@ -24,3 +24,8 @@ const wordsArrays = [who, action, what, when];
 const randomSentence = generateRandomSentence(wordsArrays);
 const randomSentenceElement = document.getElementById("generator");
 randomSentenceElement.textContent = randomSentence;
+
+//Button event listener
+generateButton.addEventListener("click", () => {
+  location.reload();
+})
